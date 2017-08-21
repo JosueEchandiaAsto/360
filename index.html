@@ -1,71 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>MMMPerú</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <!-- Project SEO-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="@mmmperu">
-    <!--icono-->
-    <link rel="shortcut icon" href="assets/imagenes/flaticon.png">
-    <!--Stile-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-    <!--Stile Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/css/bootstrap.min.css">
-    <!--Font-->
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
-    <!-- A-Frame -->
-    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <div class="">
-      <a-scene>
-        <a-sky src="assets/imagenes/imagen_panoramica.jpg" rotation="0 -130 0"></a-sky>
+ <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<a-scene>
+      <a-assets>
+        <img src="https://ucarecdn.com/6832b244-7963-4e1e-87d0-3cb487e4cd1c/" id="messi"></img>
+      </a-assets>
+      <a-assets>
+        
+        <img src="https://ucarecdn.com/d99710b3-886b-40ce-913f-c9d0f201d7d6/" id="sky"></img>
+      </a-assets>
+      <a-image src="#messi" position="-1 0 -9" width="5.6" height="2">
+        <a-animation
+           dur="3000"
+           attribute="opacity"
+           from="0"
+           begin="2000"
+           to="1">
+          
+        </a-animation>
+      </a-image>
 
-        <a-text font="kelsonsans" value="Puy de Sancy, France" width="6" position="-2.5 0.25 -1.5"
-                rotation="0 15 0"></a-text>
-      </a-scene>
-    </div>
-    <div class="content-mmm">
-      <div class="container">
-        <div class="row box-contenido">
-          <div class="col-md-12 text-center">
-            <div class="logo">
-              <img src="assets/imagenes/logo-mmm.png">
-              <hr>
-            </div>
-            <div class="box-mant text-uppercase ">
-              <p>en mantenimiento</p>
-            </div>
-            <div class="text-p">
-              <p>Nuestra página web se encuentra en proceso de mantenimiento y<br>estará inactiva temporalmente.<br>Visitanos con normalidad a partir del lunes 24 de abril.</p>
-            </div>
-            <div class="redes">
-              <p>Para más información siguenos en:</p>
-              <ul>
-                <li>
-                  <a href=""><img src="assets/imagenes/icon-facebook.png" title="Facebook"></a>
-                </li>
-                <li>
-                  <a href=""><img src="assets/imagenes/icon-twitter.png" title="Twitter"></a>
-                </li>
-                <li>
-                  <a href=""><img src="assets/imagenes/icon-youtube.png" title="Youtube"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="js/jquery-1.12.3.min.js"></script>
-    <!-- Javascripts de Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+      <a-sky src="#sky"></a-sky>
+ </a-scene>
